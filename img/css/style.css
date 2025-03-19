@@ -48,7 +48,7 @@ footer{
 .playlist .spotify img{
    width: 30px;
    height: 30px;
-   margin-left: 15px;
+   margin-left: 10px;
    padding-left: 10px;
 }
 .search{
@@ -60,8 +60,8 @@ footer{
 .search img{
    width: 22px;
    height: 22px;
-   padding-left: 13px;
-   margin-left: 15px;
+   padding-left: 10px;
+   margin-left: 10px;
    margin-right: 5px;
 }
 
@@ -83,7 +83,7 @@ footer{
     color: white;
 }
 .main-playlist p{
-    padding-left: 13px;
+    padding-left: 10px;
     margin: 8px 10px;
     font-size: 13px;
     
@@ -96,26 +96,42 @@ footer{
     margin-bottom: 10px;
     margin-left: 0;
     margin-right: 10px;
+}
 
+.playlist-bottom #card #img-footer{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    
 }
-.footer-playlist .playlist-bottom #app{
-    font-size: 11px;
-    text-align: center;
-    margin: 7px 20px;
-    border-bottom: 1px solid gray;
-}
-.footer-playlist .playlist-bottom img{
-    height: 8px;
-    width: 8px; 
-}
-.footer-playlist .playlist-bottom #profile img{
+
+.playlist-bottom  #card img{
+    width: 12px;
     height: 12px;
-    width: 12px; 
-    margin-left: 17px;
-    margin-right: 10px;
+    margin-right: 6px;
+}
+
+.footer-playlist .playlist-bottom #app{
+    font-size: 12px;
+}
+
+.playlist-bottom #card-2 #profile img{
+    height: 15px;
+    width: 15px; 
+    margin-left: 10px;
+    padding: 1.5px;
+    margin-right: 8px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    background-color: grey;
+}
+.footer-playlist .playlist-bottom #card-2{
+    margin-top: 10px;
+    padding-top: 5px;
 }
 .footer-playlist .playlist-bottom #profile{
     color: white;
+    font-size: 15px; padding-top: 5px;
 
 }
 
@@ -144,11 +160,35 @@ footer{
         height: 50%;
         padding: 0 5px;
         margin: 0 8px;
-        
     }
     .main-playlist{
+        height: 320px;
+    }
+
+    h4, .name-playlist{
         display: none;
     }
+    .footer-playlist{
+        height: 30px;
+    }
+    .footer-playlist .playlist-bottom #app{
+        display: none;
+
+    }
+    .footer-playlist .playlist-bottom #img-footer{
+        width: 50%;
+        height: 50%;
+        padding-right: 30px;
+        
+    }
+    .footer-playlist .playlist-bottom #name-bottom{
+        display: none;
+    }
+    .footer-playlist .playlist-bottom #profile{
+        margin-left: 6px;
+        margin-right: 8px;
+    }
+
 
     
  
