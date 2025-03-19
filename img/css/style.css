@@ -15,9 +15,10 @@ body{
     flex-direction: column;
 }
 main{
-     background-color: #cbc2c2;
+     background-color: hsla(259, 85%, 5%, 0.604);
      flex-grow: 1;
      display: flex;
+
      height:calc(100vh - 100px) ;
 }
 
@@ -34,30 +35,38 @@ footer{
     width: calc(100% - 170px);
     overflow: auto;
 }
+.playlist .spotify{
+    margin: 11px 0 16px 0;
+    align-content: center;
+}
+
+.playlist .spotify #name{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 30px;
+}
 .playlist .spotify img{
-    margin-right: 2.5rem;
-    margin: 15px 40px 15px 20px;
+   width: 30px;
+   height: 30px;
+   margin-left: 15px;
+   padding-left: 10px;
 }
 .search{
     display: flex;
     flex-direction: column;
     color: rgba(255, 255, 255, 0.50);
-    
 }
-.search span i{
-    font-size: 16px;
-    padding-left: 7px;
+
+.search img{
+   width: 22px;
+   height: 22px;
+   padding-left: 13px;
+   margin-left: 15px;
+   margin-right: 5px;
 }
-.search span{
-    margin: 5px 5px;
+
+.search #name{
     font-size: 13px;
-    text-align: left;
-    padding-left: 13px;
-}
-.search span #name{
-    font-size: 13px;
-    margin: 0;
-    padding-left: 7px;
 }
 .main-playlist{
     color:rgba(255, 255, 255, 0.50) ;
@@ -70,30 +79,77 @@ footer{
 }
 .main-playlist h4{
     padding-left: 13px;
-    margin-left: 10px;
+    margin: 15px 10px;
     color: white;
 }
 .main-playlist p{
     padding-left: 13px;
-    margin-left: 10px;
+    margin: 8px 10px;
+    font-size: 13px;
+    
+}
+.main-playlist .creation{
+    padding: 6px 8px;
+    background-color: gray;
+    color: hsl(0, 0%, 0%);
+    margin-top: 12px ;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 10px;
+
+}
+.footer-playlist .playlist-bottom #app{
+    font-size: 11px;
+    text-align: center;
+    margin: 7px 20px;
+    border-bottom: 1px solid gray;
+}
+.footer-playlist .playlist-bottom img{
+    height: 8px;
+    width: 8px; 
+}
+.footer-playlist .playlist-bottom #profile img{
+    height: 12px;
+    width: 12px; 
+    margin-left: 17px;
+    margin-right: 10px;
+}
+.footer-playlist .playlist-bottom #profile{
+    color: white;
+
 }
 
 
 /* media query */
 @media screen and (max-width: 552px){
     .search span #name{
-        display: none;
+        display:none;
+    }
+    .search #img img{
+        width: 50%;
+        height: 50%;
+        padding: 0 5px ;
+        margin: 0 8px;
     }
     .playlist{
         background-color: black;
         width: 50px;
         overflow: auto;
     }
-    .search span{
-        padding: 0 10px;
+    .playlist .spotify #name{
+        display: none;
     }
-    .search span i{
-       padding: 0;
-       font-size: 20px;
+    .playlist .spotify img{
+        width: 50%;
+        height: 50%;
+        padding: 0 5px;
+        margin: 0 8px;
+        
     }
+    .main-playlist{
+        display: none;
+    }
+
+    
+ 
 }
