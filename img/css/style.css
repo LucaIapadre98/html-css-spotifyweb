@@ -27,7 +27,6 @@ footer{
 }
 .playlist{
     background-color: black;
-    color: white;
     width: 170px;
     overflow: auto;
 }
@@ -42,6 +41,7 @@ footer{
 .search{
     display: flex;
     flex-direction: column;
+    color: rgba(255, 255, 255, 0.50);
     
 }
 .search span i{
@@ -55,7 +55,45 @@ footer{
     padding-left: 13px;
 }
 .search span #name{
-    font-size: 15px;
+    font-size: 13px;
     margin: 0;
+    padding-left: 7px;
+}
+.main-playlist{
+    color:rgba(255, 255, 255, 0.50) ;
+    width: 100%;
+    height: 320px;
+}
+.footer-playlist{
+    color:rgba(255, 255, 255, 0.50) ;
+    height: 30px;
+}
+.main-playlist h4{
+    padding-left: 13px;
+    margin-left: 10px;
+    color: white;
+}
+.main-playlist p{
+    padding-left: 13px;
+    margin-left: 10px;
+}
 
+
+/* media query */
+@media screen and (max-width: 552px){
+    .search span #name{
+        display: none;
+    }
+    .playlist{
+        background-color: black;
+        width: 50px;
+        overflow: auto;
+    }
+    .search span{
+        padding: 0 10px;
+    }
+    .search span i{
+       padding: 0;
+       font-size: 20px;
+    }
 }
