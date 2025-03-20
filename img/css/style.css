@@ -30,6 +30,7 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     padding: 0 10px;
+    cursor: pointer;
 }
 .playlist{
     background-color: black;
@@ -189,20 +190,77 @@ footer .piece-of-music .icons span{
 .piece-of-music .img-piece img{
     width: 35px;
 }
+.riproduction{
+    display: flex;
+    flex-direction: column;
+}
 .riproduction .icon-riproduction{
     padding-top: 3px;
     color: white;
+    text-align: center;
+    padding: 0 25px;
 }
 .riproduction .icon-riproduction i{
     margin: 10px;
+    
     font-size: 14px;
 }
 .riproduction .icon-riproduction span .fa-circle-play{
     font-size: 22px;
 }
-footer .inline div{
-    border: 2px solid grey;
+footer .inline{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+footer .inline .time-1{
+    font-size: 10px;
+    color: white;
+    margin-right: 15px;
+    margin-top: 4px;
+}
+footer .inline hr{
+    border: 2px solid white;
+    width: 300px;
+}
+footer .inline .time-2{
+    font-size: 10px;
+    color: white;
+    margin-left: 15px;
+    margin-top: 4px;
+}
+footer .volume-music{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+footer .volume-music .icon-music{
+    color: white;
+    font-size: 11px;
+}
+.volume-music .icon-music span i{
+    margin: 4px;
+}
+footer .volume-music .icon-volume{
+    color: white;
+    font-size: 11px;
+}
+.volume-music .icon-volume i{
+    margin: 8px;
+}
+.volume-music .icon-volume{
+    display: flex;
+    flex-direction: row;
+}
+ .icon-volume hr{
+    border: 2px solid white;
+    width: 90px;
+    height: 0;
+    margin-top: 11px;
+}
+
+
+
 
 
 /* media query */
@@ -276,6 +334,25 @@ footer .inline div{
     }
     .playlist-bottom #card-2 #profile img{
         margin: 0 10px 0 8px;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    footer .riproduction{
+        display: flex; 
+    }
+    footer .piece-of-music{
+        display: flex;
+    }
+    footer .volume-music{
+        display: flex;
+    }
+    
+    .volume-music .icon-music .icon-volume div{
+        display: flex;
+        flex-direction: row;
     }
     footer .piece-of-music .icons span{
         display: flex;
