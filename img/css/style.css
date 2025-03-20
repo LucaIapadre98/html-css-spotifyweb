@@ -24,8 +24,12 @@ main{
 }
 
 footer{
-    height: 110px;
+    height: 70px;
     background-color: hsl(0, 0%, 24%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
 }
 .playlist{
     background-color: black;
@@ -148,7 +152,33 @@ footer{
 .footer-playlist .playlist-bottom #profile{
     color: white;
     font-size: 15px; padding-top: 5px;
+}
+footer .piece-of-music{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+footer .piece-of-music .title-piece{
+    display: flex;
+    flex-direction: column;
+}
+footer .piece-of-music .title-piece p,
+footer .piece-of-music .title-piece h4{
+    margin: 0 ;
+    padding: 0 10px;
+    font-weight: bold;
+}
+footer .piece-of-music .title-piece h4{
+    color: white;
+    font-size: 12px;
+}
+footer .piece-of-music .title-piece p{
+     color: lightgray;
+     font-size: 10px;
+}
 
+.piece-of-music .img-piece img{
+    width: 35px;
 }
 
 
