@@ -104,6 +104,10 @@ footer{
     padding-left: 10px;
     
 }
+.playlist-bottom  #card,
+.playlist-bottom  #card-2{
+    padding: 0 10px;
+}
 
 .playlist-bottom  #card img{
     width: 12px;
@@ -126,7 +130,7 @@ footer{
     background-color: grey;
 }
 .footer-playlist .playlist-bottom #card-2{
-    margin-top: 10px;
+    margin-top: 5px;
     padding-top: 5px;
 }
 .footer-playlist .playlist-bottom #profile{
@@ -174,13 +178,24 @@ footer{
     }
     .footer-playlist .playlist-bottom #app{
         display: none;
-
+    }
+    .footer-playlist .playlist-bottom{
+        margin-top: 30px;
+    }
+    .playlist-bottom #card{
+        padding: 0;
+    }
+    .playlist-bottom #card-2{
+        padding: 0;
+    }
+    .playlist-bottom #card-2 img{
+        margin-left: 10px;
     }
     .playlist-bottom #card #img-footer {
         width: 30%;
         height: 30%;
-        margin-left:3.5px
-       
+        padding: 0;
+        margin-right: 10px; 
     }
     .footer-playlist .playlist-bottom #name-bottom{
         display: none;
