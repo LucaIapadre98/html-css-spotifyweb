@@ -176,9 +176,32 @@ footer .piece-of-music .title-piece p{
      color: lightgray;
      font-size: 10px;
 }
+footer .piece-of-music .icons span{
+   display: flex;
+    color:lightgray;
+    flex-direction: row; 
+}
+.piece-of-music .icons span i{
+    margin: 4px;
+    font-size: 11px;
+}
 
 .piece-of-music .img-piece img{
     width: 35px;
+}
+.riproduction .icon-riproduction{
+    padding-top: 3px;
+    color: white;
+}
+.riproduction .icon-riproduction i{
+    margin: 10px;
+    font-size: 14px;
+}
+.riproduction .icon-riproduction span .fa-circle-play{
+    font-size: 22px;
+}
+footer .inline div{
+    border: 2px solid grey;
 }
 
 
@@ -254,8 +277,15 @@ footer .piece-of-music .title-piece p{
     .playlist-bottom #card-2 #profile img{
         margin: 0 10px 0 8px;
     }
-
-
-    
+    footer .piece-of-music .icons span{
+        display: flex;
+         color:lightgray;
+         flex-direction: column; 
+     }
+    footer .piece-of-music .title-piece h4,
+    footer .piece-of-music .title-piece p{
+        display: flex;
+        flex-direction: column;
+    }
  
 }
