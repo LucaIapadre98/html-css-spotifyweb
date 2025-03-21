@@ -313,7 +313,7 @@ footer .icon-volume .icon-line > .icon-line-2{
  }
  .type-song .title-song h2{
     color: white;
-    margin-left: 22px;
+    margin-left: 12px;
     font-size: 20px;
  }
 
@@ -373,12 +373,33 @@ footer .icon-volume .icon-line > .icon-line-2{
 .container-row .card-title #sinister{
     margin-left: 75px;
 }
-.type-song .title-song-2 h2{
+
+
+.content .type-song-2 h2{
     color: white;
-    margin-left: 22px;
-    margin-top: 50px;
+    font-weight: bold;
+    margin-left: 12px;
+    margin-top: 70px;
     font-size: 20px;
  }
+ .content .type-song-2 p{
+    margin-left: 12px;
+    margin-top: 2px;
+    font-weight: bold;
+    font-size: 13px;
+    color: lightgray;
+ }
+ .content .type-song-2 .container-row-2{
+    width: 50%;
+ }
+ .type-song-2 .container-row-2 .row-2{
+    display: flex;
+    flex-direction: row;
+ }
+
+ 
+
+
 
    /*Media Query*/
 @media screen and (min-width: 890px){
