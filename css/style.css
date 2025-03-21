@@ -375,27 +375,79 @@ footer .icon-volume .icon-line > .icon-line-2{
 }
 
 
-.content .type-song-2 h2{
+.content .type-song-2 .title-song-2 h2{
     color: white;
     font-weight: bold;
     margin-left: 12px;
     margin-top: 70px;
     font-size: 20px;
  }
- .content .type-song-2 p{
+ .content .type-song-2  .title-song-2 p{
     margin-left: 12px;
     margin-top: 2px;
     font-weight: bold;
     font-size: 13px;
     color: lightgray;
  }
- .content .type-song-2 .container-row-2{
-    width: 50%;
- }
- .type-song-2 .container-row-2 .row-2{
+.type-song-2 .container-row {
+    display: flex;
+    width: 100%;
+}
+.type-song-2 .container-row .row{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 100%;
+}
+ .container-row .row .col-1-2{
+    width: calc(100% / 6);
+    margin: 2px;
  }
+ .container-row .row .col-1-2 .card-image{
+    width: 100%;
+    height: 80%;
+ }
+
+ .container-row .row .col-1-2 .card-image img{
+    width: 80%;
+    margin-left: 10px;
+ }
+
+ .container-row .row .col-1-2 .card-title{
+    padding-top: 5px;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
+    color: white;
+ }
+ .container-row .card-title-2 h3{
+    padding-top: 9px;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 70px;
+    color: white;
+}
+.container-row .card-title-3 h3{
+    padding-top: 9px;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 70px;
+    color: white;
+}
+.container-row .col-1-2 .card-image-3 img{
+    border-radius: 50%;
+    width: 85%;
+}
+.container-row .col-1-2 .card-image-2 img{
+    margin-left: 10px;
+    border-radius: 50%;
+    width: 85%;
+}
+
+
 
  
 
@@ -412,6 +464,9 @@ footer .icon-volume .icon-line > .icon-line-2{
     .main-playlist{
         height: 400px;
     }
+    .container-row .row .col-1-2 .card-image img{
+        width: 75%;
+     }
 }
 
 
@@ -426,6 +481,8 @@ footer .icon-volume .icon-line > .icon-line-2{
     .main-playlist{
         height: 320px;
     }
+    
+    
   
 }
 
